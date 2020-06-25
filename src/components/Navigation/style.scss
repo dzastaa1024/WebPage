@@ -1,0 +1,30 @@
+@import "../../styles/variables.scss";
+
+.navigation {
+  background-color: $primary-background-color;
+
+  .nav {
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      color: #fff;
+      font-size: 1.2rem;
+
+      &-item {
+        padding: 2rem;
+      }
+
+      &-value {
+        color: #fff;
+        padding: inherit;
+        outline: none;
+
+        &:focus,
+        &:hover {
+          cursor: pointer;
+          color: $secondary-background-color;
+        }
+      }
+    }
+  }
+}

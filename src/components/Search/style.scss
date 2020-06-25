@@ -1,0 +1,94 @@
+@import "../../styles//variables.scss";
+
+.search {
+  padding: 0 2rem;
+  background-color: $secondary-background-color;
+  height: 100%;
+
+  &__title {
+    font-size: 2rem;
+    color: #fff;
+    padding: 3rem 0;
+  }
+
+  .dropdown {
+    position: relative;
+    margin-bottom: 2rem;
+    width: 100%;
+    line-height: 1em;
+    background: #fff;
+    padding: 0.7em 2em 0.7em 1em;
+    border: 1px solid rgba(34, 36, 38, 0.15);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &--half {
+      display: inline-block;
+      width: 50%;
+    }
+
+    &.visible {
+      border-color: $border-color;
+
+      .arrow {
+        transform: rotate(180deg);
+      }
+
+      .menu {
+        visibility: visible;
+        opacity: 1;
+        border-top-color: #fff;
+        transform: scaleY(1);
+      }
+    }
+
+    .label {
+      color: $color-font;
+      display: inline-block;
+    }
+
+    .arrow {
+      display: inline-block;
+      font-size: 0.4rem;
+      transition: transform 0.2s ease;
+      position: absolute;
+      right: 20px;
+    }
+
+    .menu {
+      visibility: hidden;
+      opacity: 0;
+      transform: scaleY(0);
+      transform-origin: top center;
+      position: absolute;
+      top: 100%;
+      left: -2px;
+      right: -2px;
+      border: 1px solid $border-color;
+      background: #fff;
+      box-shadow: 0 2px 3px 0 rgba(34, 36, 38, 0.15);
+      transition: all 0.2s ease;
+      z-index: 11;
+
+      &__item {
+        border-top: 1px solid #fafafa;
+        padding: 0.7em 2em 0.7em 1em;
+      }
+    }
+  }
+
+  .btn {
+    width: 100%;
+    padding: 1.2rem;
+    margin-bottom: 0.5rem;
+    border: none;
+    background: $primary-background-color;
+    color: #fff;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../styles//variables.scss";
+
+.main {
+  padding: 2rem 0 5rem;
+
+  .hero {
+    display: flex;
+    margin-bottom: 4rem;
+    height: 30rem;
+
+    &__serach {
+      min-width: 25rem;
+      margin-right: 2rem;
+    }
+
+    &__ima-area {
+      max-width: 62rem;
+    }
+
+    &__image {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .desc {
+    &__title {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+
+    &__paragraph {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+  }
+}

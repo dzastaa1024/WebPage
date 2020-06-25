@@ -1,0 +1,22 @@
+@import "../../styles/variables.scss";
+
+.footer {
+  background-color: $primary-background-color;
+
+  &__menu {
+    text-align: center;
+    padding: 4.5rem 0 5.5rem;
+  }
+
+  &__menu-item {
+    background-color: $footer-item-background-color;
+    padding: 0.7rem;
+    color: $footer-item-font-color;
+    display: inline-block;
+    cursor: pointer;
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.header {
+  padding: 2rem 0;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-left: -2rem;
+  }
+
+  &__social-media {
+    text-align: right;
+  }
+
+  &__phoneNo {
+    padding-bottom: 1rem;
+  }
+
+  .icon {
+    &__fb {
+      margin-right: 0.5rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
